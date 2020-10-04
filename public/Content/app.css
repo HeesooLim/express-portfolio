@@ -1,2 +1,99 @@
 /* custom css goes here */
 
+/* general */
+body {
+  margin-top: 54px;
+  background-image: linear-gradient(rgba(196, 196, 196, 0.863), rgba(196, 196, 196, 0.863)), url(/Assets/images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* no underline when hovered */
+a:hover {
+  text-decoration: none;
+}
+
+/* applied to all containers */
+.generalContainer {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+/* footerContainer > sitemap */
+.sitemap {
+  display: inline-block;
+  text-align: left;
+  margin-right: 10%;
+}
+
+/* anchors in sitemap */
+.sitemap a {
+  display: block;
+  color:  rgb(182, 182, 182);
+  padding-bottom: 5px;
+}
+
+.sitemap a:hover {
+  color: blanchedalmond;
+}
+
+.footerContainer {
+  background-color: #304B64;
+  font-size: 14px;
+  color: rgb(182, 182, 182);
+}
+
+.footerContainer h3 {
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+/* footerContainer > footerContact */
+.footerContact {
+  display: inline-block;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.footerContact p {
+  margin-bottom: 12.5px;
+}
+
+.navbar-custom {
+  background-color: #304B64;
+}
+
+/* buttons in all pages */
+.generalContainer a.button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color:rgb(89, 107, 134);
+  font-size: 23px;
+  padding: 15px 25px 15px 25px;
+  color: white;
+  border-radius: 3px;
+}
+
+.generalContainer a.button:hover {
+  background-color: rgb(61, 73, 92);
+}
+
+
+/* style for home page */
+.generalContainer .homeContainer {
+  background-color:  rgba(255, 255, 255, 0.7);
+}
+
+.homeContainer {
+  padding: 100px 0px 150px 0px ;
+  margin-bottom: 200px;
+}
+
+.homeContainer h1 {
+  font-size: 5em;
+}
+
+.homeContainer h6 {
+  margin-top: 20px;
+}

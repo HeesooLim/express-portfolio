@@ -4,9 +4,9 @@
 
 <!-- Main Content -->
     <main class="container">
-      <div class="jumbotron">
-        <h1 class="display-6">Welcome to <%= title %> page!</h1>
-      </div>
+      <% if(title == "Home"){ %>
+      <%-include partials/home_content.ejs %>
+      <% } %>
     </main>
 
 
