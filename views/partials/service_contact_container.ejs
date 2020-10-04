@@ -1,0 +1,10 @@
+<div class="generalContainer serviceContainer">
+    <h1><b><%= title %></b></h1>
+    <div class="productContainer">
+        <% if (title == "Services"){ %>
+        <%-include services_content.ejs %>
+        <% } if (title == "Contact"){%>
+        <%-include contact_content.ejs %>
+        <% } %>
+    </div>
+</div>
