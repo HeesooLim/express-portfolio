@@ -4,13 +4,17 @@
 
 <!-- Main Content -->
     <main>
+
+    <!-- inject different partial files -->
       <% if(title == "Home"){ %>
       <%-include partials/home_content.ejs %>
-      <% } %>
-      <% if (title == "About"){ %>
+
+      <% } if (title == "About"){ %>
       <%-include partials/about_content.ejs %>
+
       <% } if (title == "Products"){%>
       <%-include partials/products_content.ejs %>
+
       <% } if ((title == "Services") || (title == "Contact")){%>
       <%-include partials/service_contact_container.ejs %>
       <% } %>

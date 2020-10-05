@@ -45,6 +45,7 @@ a:hover {
   color: blanchedalmond;
 }
 
+/* Container for footer on every page */
 .footerContainer {
   background-color: #304B64;
   font-size: 14px;
@@ -68,6 +69,7 @@ a:hover {
   margin-bottom: 12.5px;
 }
 
+/* footer navigation bar custom style */
 .navbar-custom {
   background-color: #304B64;
 }
@@ -100,25 +102,32 @@ a:hover {
 
 .homeContainer h1 {
   font-size: 5em;
+  font-family: serif;
 }
 
 .homeContainer h6 {
   margin-top: 20px;
+  font-family: serif;
 }
 
-/* container in about, products */
+/* container in about, products, service, and contact */
 .productContainer {
   /* padding: 5% 15% 5% 15%; */
-  padding: 0% 15% 5% 15%;
+  padding: 0% 15% 0% 15%;
   margin: 150px 0px 150px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.productContainer h1 {
+  display: block;
+}
 
+/* image container in productContainer */
 .productImg {
   margin-top: 7%;
+  margin-bottom: 7%;
   width: 300px;
   height: 300px;
 }
@@ -135,11 +144,24 @@ img {
   text-align: left;
 }
 
-
+/* align the text to the right side for a flipped product element */
 .project:nth-of-type(2) .productDescription {
   text-align: right;
 }
 
+
+/* container for services, contact */
+.serviceContainer {
+  padding-top: 60px;
+  margin: 110px 0px 150px 0px;
+}
+
+/* remove the margin in product container */
+.serviceContainer .productContainer {
+  margin: 0px 0px 0px 0px;
+}
+
+/* service element */
 .serviceIndividual {
   background-color: rgb(163, 163, 163);
   width: 200px;
@@ -147,23 +169,10 @@ img {
   margin: 2px;
   position: relative;
   margin-top: 55px;
-  margin-bottom: 55px;
+  margin-bottom: 130px;
 }
 
-.productContainer h1 {
-  display: block;
-}
-
-.serviceContainer {
-  padding-top: 60px;
-  /* padding-bottom: 60px; */
-  margin: 110px 0px 150px 0px;
-}
-
-.serviceContainer .productContainer {
-  margin: 0px 0px 0px 0px;
-}
-
+/* overlay element on serviceIndividual */
 .overlay {
   position: absolute;
   left: 0;
@@ -179,4 +188,46 @@ img {
   opacity: 0.7;
   transition: 0.5s;
 }
+
+/* form for contact page */
+form {
+  margin: 5% 15% 5% 15%;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.267);
+  box-shadow: 1px 1px 10px #cfcfcf;
+}
+
+/* container in contact page */
+.contactContainer {
+  padding: 0% 15% 5% 15%;
+  margin: 0px 0px 150px 0px;
+}
+
+/* my contact information container */
+#myContact {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: rgba(255, 255, 255, 0.267);
+  margin: 5% 15% 5% 15%;
+  padding: 30px 0px 10px 0px;
+  box-shadow: 1px 1px 10px #cfcfcf;
+}
+
+/* columns in my contact information */
+.contactColumn  {
+  display: inline-block;
+  text-align: left;
+}
+
+/* left columns in my contact information */
+.contactColumn:first-of-type {
+  margin-right: 5%;
+}
+
+/* rightcolumns in my contact information */
+.contactColumn:last-of-type {
+  margin-left: 5%;
+}
+
 /* media (1150px) */
