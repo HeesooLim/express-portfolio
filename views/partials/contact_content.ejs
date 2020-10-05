@@ -3,7 +3,7 @@
         <div class="form-row">
             <div class="col-md-6 mb-3">
             <label for="validationCustom01">First name</label>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" class="form-control" id="validationCustom01" required >
             <div class="valid-feedback">
                 Looks good!
             </div>
@@ -19,11 +19,16 @@
         <div class="form-row">
             <div class="col-md-12 mb-3">
             <label for="validationCustom03">Email</label>
-            <input type="email" class="form-control" id="validationCustom03" required>
+            <input type="email" class="form-control" id="validationCustom03" placeholder="Enter your email" required>
             <div class="invalid-feedback">
                 Please provide a valid email.
             </div>
             </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="validationTextarea">Your Message</label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Enter your message"></textarea>
         </div>
         
         <button type="submit" class="btn btn-outline-info">Send</button>

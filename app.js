@@ -1,3 +1,10 @@
+/*
+  Author: Heesoo Lim
+  studentID: 301061152
+  Date: October 05, 2020
+  File Name: app.js
+*/
+
 // installed 3rd party packages
 let createError = require('http-errors');
 let express = require('express');

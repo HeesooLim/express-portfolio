@@ -1,5 +1,12 @@
-var express = require('express');
-var router = express.Router();
+/*
+  Author: Heesoo Lim
+  studentID: 301061152
+  Date: October 05, 2020
+  File Name: users.js
+*/
+
+let express = require('express');
+let router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
