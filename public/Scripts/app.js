@@ -1,7 +1,7 @@
 /*
   Author: Heesoo Lim
   studentID: 301061152
-  Date: October 05, 2020
+  Date: October 22, 2020
   File Name: app.js
 */
 
@@ -10,6 +10,7 @@
     
     function Start()
     {
+
         let title = document.title;
 
         // h1 text ("Welcome,") in home page
@@ -39,6 +40,24 @@
                 welcomeText.innerHTML = `Welcome, ${firstName}`;
             }
         }
+
+
+
+
+        let deleteButtons = document.querySelectorAll('.btn-warning');
+
+        for (const button of deleteButtons) 
+        {
+            console.log(button);
+            button.addEventListener('click', (event) => {
+                if(!confirm("Do you want to delete this contact?"))
+                {
+                    event.preventDefault();
+                    window.location.assign('/business-contacts');
+                }
+            });
+        }
+        
     }
     
     function formValidate()
@@ -82,6 +101,23 @@
         console.log(`Last Name  : ${lastName}`);
         console.log(`Email      : ${email}`);
         console.log(`message    : ${message}`);
+    }
+
+    function confirmDelete()
+    {
+        let deleteButtons = document.querySelectorAll('.btn-danger');
+
+        for (const button of deleteButtons) 
+        {
+            button.addEventListener('click', (event) => {
+                console.log('clicked!');
+                if(!confirm('Do you want to delete this contact?'))
+                {
+                    event.preventDefault();
+                    window.location.assign('/business-contacts');
+                }
+            });
+        }
     }
 
     window.addEventListener("load", Start);

@@ -3,7 +3,7 @@
 /*
   Author: Heesoo Lim
   studentID: 301061152
-  Date: October 05, 2020
+  Date: October 22, 2020
   File Name: server.js
 */
 
@@ -11,7 +11,7 @@
  * Module dependencies.
  */
 
-var app = require('./app');
+var app = require('./server/config/app');
 var debug = require('debug')('assignment1:server');
 var http = require('http');
 
